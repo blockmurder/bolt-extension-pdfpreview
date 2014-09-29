@@ -48,7 +48,7 @@ function pdfpre($file="", $width=100, $height=0)
         $filepath = $path_parts['dirname'];
         
         if (!file_exists($thumb_path.$filename.'.jpg')) {   
-            exec('convert "'.$this->app['paths']['filespath'].'/'.$file.'[0]" -colorspace RGB -background white -alpha remove -geometry '.$width.' '.$thumb_path.$filename.'.jpg');
+            exec('convert "'.$this->app['paths']['filespath'].'/'.$file.'[0]" -colorspace RGB -density 300 -quality 95 -background white -alpha remove -geometry '.$width.' -border 2x2 -bordercolor "#efefef" '.$thumb_path.$filename.'.jpg');
         }
         
         $html = <<< EOM
