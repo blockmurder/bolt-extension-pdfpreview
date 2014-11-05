@@ -1,4 +1,3 @@
-# Your Disqus shortname
-disqus_name: boltcm
+# define your path for thumbnails in files/
 thumbnail_folder: pdf_temp/
 
