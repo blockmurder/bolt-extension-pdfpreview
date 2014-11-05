@@ -5,7 +5,7 @@
     "keywords" : [
             "PDF",
             "preview"
-    ]
+    ],
     "require": {
         "bolt/bolt": ">1.9,<3.0.0"
     },
