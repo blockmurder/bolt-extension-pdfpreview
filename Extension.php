@@ -1,30 +1,15 @@
 <?php
 // Disqus comment thread Extension for Bolt
 
-namespace PDFpreview;
+namespace Bolt\Extension\blockmurder\pdfPreview;
+
+use Bolt\Application;
+use Bolt\BaseExtension;
 
 class PDFpreviewException extends \Exception {};
-class Extension extends \Bolt\BaseExtension
+
+class Extension extends BaseExtension
 {
-    function info()
-    {
-
-        $data = array(
-            'name' =>"PDFpreview",
-            'description' => "Generates a preview image form a PDF File with <code> {{ pdfpre( filename, width, hight ) }} </code>",
-            'author' => "blockmurder",
-            'link' => "http://blockmurder.ch",
-            'version' => "1",
-            'required_bolt_version' => "1.0",
-            'highest_bolt_version' => "1.0",
-            'type' => "Twig function",
-            'first_releasedate' => "2014-09-29",
-            'latest_releasedate' => "2014-09-29",
-        );
-
-        return $data;
-
-    }
 
     function initialize()
     {
