@@ -4,11 +4,8 @@
 namespace Bolt\Extension\blockmurder\pdfPreview;
 
 use Bolt\Application;
-use Bolt\BaseExtension;
 
-class PDFpreviewException extends \Exception {};
-
-class Extension extends BaseExtension
+class Extension extends \Bolt\BaseExtension
 {
 
     function initialize()

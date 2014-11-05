@@ -2,11 +2,15 @@
     "name": "blockmurder/pdfPreview",
     "description": "Generates a preview image form a PDF File with <code> {{ pdfpre( filename, width, hight ) }} </code>",
     "type": "bolt-extension",
+    "keywords" : [
+            "PDF",
+            "preview"
+    ]
     "require": {
         "bolt/bolt": ">1.9,<3.0.0"
     },
     "license": "GPL v3+",
-    "authors": [{"name": "Matthias Renner", "email": "info@blockmurder.ch"}
+    "authors": [{"name": "blockmurder", "email": "info@blockmurder.ch"}
     ],
     "autoload": {
         "files": [
@@ -17,6 +21,5 @@
         }
     },
     "extra": {
-        "bolt-assets": "assets"
     }
 }
