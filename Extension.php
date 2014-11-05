@@ -7,6 +7,10 @@ use Bolt\Application;
 
 class Extension extends \Bolt\BaseExtension
 {
+    public function getName()
+    {
+        return "pdfPreview";
+    }
 
     function initialize()
     {
@@ -16,7 +20,7 @@ class Extension extends \Bolt\BaseExtension
     }
 
 
-function pdfpre($file="", $width=100, $height=0)
+    function pdfpre($file="", $width=100, $height=0)
     {
     
 
